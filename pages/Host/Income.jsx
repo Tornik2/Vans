@@ -16,7 +16,7 @@ export default function Income() {
             <img
                 className="graph"
                 src="../assets/images/income-graph.png"
-                alt="Income graph"
+                alt="Income Graph"
             />
             <div className="info-header">
                 <h3>Your transactions (3)</h3>
