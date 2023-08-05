@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, NavLink } from "react-router-dom"
+import userLogo from "/assets/images/avatar-icon.png"
 
 const logg = localStorage.getItem('loggedin')
 console.log(logg)
@@ -39,7 +40,7 @@ export default function Header() {
                 
                 <Link to={logg ? 'host' : 'login'} className="login-link">
                     <img 
-                        src="../assets/images/avatar-icon.png" 
+                        src={userLogo} 
                         className="login-icon"
                     />
                 </Link>
