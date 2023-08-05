@@ -20,7 +20,7 @@ export async function action({ request }) {
         .searchParams.get("redirectTo") || "/host"
     
     try {
-        localStorage.setItem("loggedin", true)
+        localStorage.setItem("loggedin", false)
         
         
         return redirect(pathname)
@@ -48,11 +48,13 @@ export default function Login() {
                 <input
                     name="email"
                     type="email"
+                    value="b@b.com"
                     placeholder="Email address"
                 />
                 <input
                     name="password"
                     type="password"
+                    value="123"
                     placeholder="Password"
                 />
                 <button
