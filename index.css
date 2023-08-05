@@ -233,7 +233,11 @@ footer {
     gap: 34px;
     margin-top: 57px;
 }
-
+@media (min-width: 850px) {
+    .van-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 .van-tile a {
     color: #161616;
     text-decoration: none;    
@@ -761,7 +765,7 @@ img.graph {
     opacity: 0.7;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 850px) {
     .home-container {
         display: flex;
     }
