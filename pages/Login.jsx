@@ -21,8 +21,6 @@ export async function action({ request }) {
     
     try {
         localStorage.setItem("loggedin", false)
-        
-        
         return redirect(pathname)
     } catch(err) {
         return err.message
@@ -48,14 +46,14 @@ export default function Login() {
                 <input
                     name="email"
                     type="email"
-                    value="b@b.com"
                     placeholder="Email address"
+                    required
                 />
                 <input
                     name="password"
                     type="password"
-                    value="123"
                     placeholder="Password"
+                    required
                 />
                 <button
                     disabled={navigation.state === "submitting"}
